@@ -12,13 +12,6 @@ cd ~/ros2_ws/src
 ```bash
 git clone https://github.com/zsozsogellert-sketch/racsecar
 ```
-
-### Rviz 2D Overlay
-
-```bash
-sudo apt install ros-humble-rviz-2d-overlay*
-```
-
 ### ros2 könyvtár telepítés
 
 ```bash
