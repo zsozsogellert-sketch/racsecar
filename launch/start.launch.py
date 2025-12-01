@@ -9,7 +9,7 @@ from ament_index_python.packages import get_package_share_directory, get_package
 
 def generate_launch_description():
     megoldas = Node(
-        package='way_finder',
+        package='racsecar',
         executable='megoldas.py',
         output='screen',
         parameters=[
@@ -17,13 +17,6 @@ def generate_launch_description():
                 'Csapatnev': "Racsecar",
                 'Azonosito': "1",
                 'debug': False,
-                # 'angle_range': 360,
-                #'velocity': 20.00,
-                # 'car_length': 0.445,
-                # 'wheelbase': 0.3187,
-                # 'map_frame': 'odom_combined', ## not uses yet
-                # 'laser_frame': 'laser',
-                # 'base_frame': 'base_link',
             }
         ]
     )
@@ -35,7 +28,7 @@ def generate_launch_description():
 
         str_overlay = IncludeLaunchDescription(
             PythonLaunchDescriptionSource([
-            FindPackageShare("way_finder"), '/string_rviz_overlay.launch.py'])
+            FindPackageShare("racsecar"), '/string_rviz_overlay.launch.py'])
         )
         start_rviz_2d_overlay = True
     except:
